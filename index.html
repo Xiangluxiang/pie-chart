@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Chart App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="data-inputs">
+            <input type="text" id="labelInput" placeholder="Label" />
+            <input type="number" id="dataInput" placeholder="Data Value" />
+            <button id="addDataBtn">Add Data</button>
+        </div>
+        <div class="data-table">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Data Value</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./src/index.ts"></script>
+</body>
+</html>
